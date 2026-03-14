@@ -1,0 +1,128 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Question */
+#question-heading {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+/* Buttons layout */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Buttons */
+#yes-button,
+#no-button {
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    min-width: 80px;
+    padding: 0 15px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#yes-button {
+    background-color: green;
+}
+
+#no-button {
+    background-color: red;
+}
+
+#yes-button p,
+#no-button p {
+    margin: 0;
+}
+
+/* Banner */
+.banner-gif {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-gif img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Success message */
+.message {
+    display: none;
+    margin-top: 20px;
+}
+
+/* ---------- MOBILE FIXES ---------- */
+
+@media (max-width: 768px) {
+
+    #question-heading {
+        font-size: 22px;
+    }
+
+    .banner-gif img {
+        max-width: 220px;
+    }
+
+    #yes-button,
+    #no-button {
+        font-size: 14px;
+        min-width: 70px;
+        height: 38px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    #question-heading {
+        font-size: 20px;
+    }
+
+    .banner-gif img {
+        max-width: 180px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    #yes-button,
+    #no-button {
+        width: 100%;
+        max-width: 200px;
+    }
+
+}
